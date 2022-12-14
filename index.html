@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>magenta-muse</title>
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@magenta/music@^1.9.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@5.7.0/dist/d3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+   
+  </head>
+
+  <body>
+    
+    <div class="text-center">
+      <body>
+        <div id="startPage">
+          <section>
+            <p> <b>MagentaMuse</b> is a user-friendly web-based tool for generating and working with musical sequences using a combination of two Magenta models, MusicVAE and MusicRNN.</p>
+            <p> <br> • generate: generates a new note sequence </br>
+              <br> • similar: creates a similar note sequence </br>
+              <br> • continue: continues current note sequence </br>
+              <br> • save: saves note sequence to a .mid file </br>
+              <br> • load a midi file: uploads a midi file that user might want to manipulate</br>
+            </p>
+            <button class="button" id="start" onclick="showMainScreen()">start</button>
+          </section>
+        </div>
+
+        <div id="mainScreen" hidden> 
+        <section>
+        <div id="button-container"> 
+          <button class="button" id="generate" onclick="generate()">generate</button>
+          <button class="button" id="similar" onclick="similar()"disabled>similar</button>
+          <button class="button" id="continue" onclick="continue_sequence()">continue</button>
+          <button class="button" id="save" onclick="save()"disabled>save</button>
+          <label class="button" id="fileBtn">
+            load a midi file
+            <input type="file" id="fileInput" multiple>
+          </label>
+        </div>
+        <svg id="vizSample"> </svg>
+        <div id="button-container"> 
+        <button class="button" id="stop" onclick="stop()"disabled>⏹</button>
+          <button class="button" id="play" onclick="play()"disabled>⏵</button> 
+        </div>
+      </section>
+       </div>
+      </body> 
+      <script  src = "./sketch.js"></script>
+  </body>
+</html>

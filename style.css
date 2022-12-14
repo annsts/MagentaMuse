@@ -1,0 +1,84 @@
+html, body {
+  margin: 20;
+  padding: 20;
+  background-color:rgb(36, 36, 36);
+  font-family: 'Helvetica'
+}
+
+.text-center {
+  text-align: center;
+}
+p {
+  color: #ffffff;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-size: 14px;
+  font-weight: 500;
+}
+
+svg {
+  border: 1px solid #b9b1b1;
+  background-color: #b9b1b1;
+  margin: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-around;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.button {
+  background-color: #444444;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 20px;
+  transition: all 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #333333;
+}
+
+.button:active {
+  background-color: #222222;
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #222222;
+}
+
+input[type="file"] {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  cursor: pointer;
+  display: none;
+  box-shadow: none;
+  font-size: inherit;
+  width: 60px;
+  color: inherit;
+  font-weight: inherit;
+  text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
